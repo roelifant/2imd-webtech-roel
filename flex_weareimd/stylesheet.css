@@ -39,3 +39,22 @@ nav ul li a {
     font-style: italic;
     color: white;
 }
+
+@media (min-width: 800px){
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+nav ul {
+    display: flex;
+    
+}
+    
+nav ul li{
+    padding: 2em;
+    }
+    
+}
