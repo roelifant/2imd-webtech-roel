@@ -11,10 +11,31 @@ body{
     background-size: cover;
 }
 
+h1 {
+    color:#ae11c6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
 #albums ul {
     display: flex;
 }
 
 #albums ul li{
     flex: 1 1 0;
+}
+
+#albums ul li h2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
 }
