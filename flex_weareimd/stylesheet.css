@@ -19,6 +19,11 @@ ul{
     list-style-type: none;
 }
 
+nav ul li{
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -43,18 +48,44 @@ nav ul li a {
 @media (min-width: 800px){
 header {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+    
+nav {
+    align-self: center;
+    flex: 1 1 0;
 }
     
 nav ul {
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
 }
     
-nav ul li{
-    padding: 2em;
-    }
+}
+
+@media (min-width: 1200px){
+    header {
+    display: flex;
+    justify-content: space-around;
+}
+    
+nav {
+    align-self: center;
+    flex: 0 0 0;
+}
+    
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 4em;
+}
     
 }
