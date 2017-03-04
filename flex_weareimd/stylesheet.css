@@ -32,6 +32,7 @@ nav ul li a {
 
 #albums ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #albums ul li{
