@@ -20,6 +20,17 @@ li{
     text-align: center;
 }
 
+#photos{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 0;
+    justify-content: space-around;
+}
+
+#photos div{
+    margin-bottom: 1.5em;
+}
+
 @media screen and (min-width: 1000px) {
     
     .typography{
