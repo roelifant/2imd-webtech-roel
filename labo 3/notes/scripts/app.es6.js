@@ -1,10 +1,12 @@
 class CardApp {
     constructor(){
-        this.buttonAddNote = document.getElementById("btnAddNote");
         this.notesContainer = document.querySelector(".notes");
         this.noteInput = document.querySelector("#txtAddNote");
-
+        
+        this.buttonAddNote = document.getElementById("btnAddNote");
         this.buttonAddNote.addEventListener("click", this.addNote.bind(this));
+        
+        this.onload.loadNote;
     }
     
     resetForm(){
@@ -27,12 +29,24 @@ class CardApp {
 
         this.notesContainer.appendChild(newNote);
         this.resetForm;
+        e.preventDefault();
+        this.saveNote;
     }
 
     removeNote(e){
         let noteToRemove = e.target.parentElement;
         this.notesContainer.removeChild(noteToRemove);
         e.preventDefault();
+    }
+    
+    saveNote(){
+        localStorage.setItem("savedNote", noteInput);
+        console.log("saved!");
+    }
+    
+    loadNote(){
+        document.getElementById("txtAddNote").innerHTML = localStorage.getItem("savedNote");
+        console.log('loaded!');
     }
 }
 
